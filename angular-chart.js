@@ -261,8 +261,8 @@
         labels: labels,
         datasets: [{
           data: data,
-          color: colours[i].strokeColor,
-          highlight: colours[i].pointHighlightStroke
+          color: colours[0].strokeColor,
+          highlight: colours[0].pointHighlightStroke
         }]
       };
     }
