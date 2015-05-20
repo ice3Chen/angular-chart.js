@@ -257,14 +257,14 @@
     }
 
     function getData (labels, data, colours) {
-      return labels.map(function (label, i) {
-        return {
-          label: label,
-          value: data[i],
+      return {
+        labels: labels,
+        datasets: [{
+          data: data,
           color: colours[i].strokeColor,
           highlight: colours[i].pointHighlightStroke
-        };
-      });
+        }]
+      };
     }
 
     function setLegend (elem, chart) {
